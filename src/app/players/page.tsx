@@ -2,7 +2,7 @@ import { getTransfers } from '@/lib/data'
 import { TEAMS } from '@/lib/mockData'
 import PlayerTable from '@/components/PlayerTable'
 
-export const revalidate = 3600
+export const revalidate = 300
 
 export default async function PlayersPage() {
   const transfers = await getTransfers()

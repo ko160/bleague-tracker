@@ -1,7 +1,7 @@
 import { getTransfers } from '@/lib/data'
 import NewsFeed from '@/components/NewsFeed'
 
-export const revalidate = 3600
+export const revalidate = 300
 
 export default async function NewsPage() {
   const transfers = await getTransfers()

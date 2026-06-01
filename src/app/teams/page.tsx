@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { TEAMS } from '@/lib/mockData'
 import { getTransfers } from '@/lib/data'
 
-export const revalidate = 3600
+export const revalidate = 300
 
 export default async function TeamsPage() {
   const transfers = await getTransfers()

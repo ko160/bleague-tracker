@@ -4,7 +4,7 @@ import { TEAMS } from '@/lib/mockData'
 import TransferCard from '@/components/TransferCard'
 import { STATUS_LABEL, TransferStatus } from '@/types'
 
-export const revalidate = 3600 // 1時間キャッシュ
+export const revalidate = 300 // 5分キャッシュ
 
 export default async function HomePage() {
   const transfers = await getTransfers()

@@ -2,7 +2,7 @@ import { getTransfers } from '@/lib/data'
 import { TEAMS } from '@/lib/mockData'
 import { STATUS_LABEL, STATUS_ICON, TransferStatus } from '@/types'
 
-export const revalidate = 3600
+export const revalidate = 300
 
 export default async function StatsPage() {
   const transfers = await getTransfers()
