@@ -1,7 +1,7 @@
 import { getTransfers } from '@/lib/data'
 import NewsFeed from '@/components/NewsFeed'
 
-export const revalidate = 300
+export const dynamic = 'force-dynamic'
 
 export default async function NewsPage() {
   const transfers = await getTransfers()

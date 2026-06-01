@@ -4,7 +4,7 @@ import { TEAMS } from '@/lib/mockData'
 import TransferCard from '@/components/TransferCard'
 import { STATUS_LABEL, TransferStatus } from '@/types'
 
-export const revalidate = 300 // 5分キャッシュ
+export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
   const transfers = await getTransfers()

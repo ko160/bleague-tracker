@@ -4,7 +4,7 @@ import { getTransfers } from '@/lib/data'
 import TransferCard from '@/components/TransferCard'
 import Link from 'next/link'
 
-export const revalidate = 300
+export const dynamic = 'force-dynamic'
 
 interface Props {
   params: Promise<{ slug: string }>
